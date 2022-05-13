@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+      integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="app.css" />
+    <title>Internship Project</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="row justify-content-center">
+        <h1 class="col-md-7 text-center">Crypto Tracker</h1>
+        <h3 class="col-md-7 text-center">PROJECT...!</h3>
+
+        <div class="col-md-6 row justify-content-center" id="bin">
+          <div class="col-md-10">
+            <form action="" id="SearchForm">
+              <div class="form-row">
+                <div class="col-12 form-group">
+                  <label for="xyz"><b>Coin Type</b></label>
+                  <select name="CoinType" class="form-control" id="xyz">
+                    <!--for drop down box--->
+                    <option value="bitcoin">Bit_coin - INR</option>
+                    <option value="ethereum">Ethereum - INR</option>
+                    <option value="tether">Tether - INR</option>
+                    <option value="binance">Binance_coin - INR</option>
+                    <option value="cardana">Cardana - INR</option>
+                    <option value="dogecoin">Doge_coin - INR</option>
+                    <!-- <option value="bitcoin dogecoin">Bit_coin  Doge_coin - INR</option>
+                    <option value="bitcoin ether">Bit_coin  Ether_coin - INR</option> -->
+                    <option value="polkadot">Polkadot - INR</option>
+                    <option value="uniswap">Uniswap - INR</option>
+                    <option value="solana">Solana - INR</option>
+                  </select>
+                </div>
+              </div>
+
+              <button type="submit" class="col-12 btn btn-success">
+                Get Price
+              </button>
+            </form>
+          </div>
+        </div>
+
+        <div class="col-md-9 text-center row justify-content-center">
+          <table
+            class="col-md-7 m-5"
+            border="20px solid grey"
+            style="background-color: white; padding: 60; font-weight: 700"
+            id="abc"
+          ></table>
+        </div>
+
+        <div id="list"></div>
+      </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="app.js"></script>
+    
+    <!-- live chat -->
+    <script type='text/javascript' data-cfasync='false'>window.purechatApi = { l: [], t: [], on: function () { this.l.push(arguments); } }; (function () { var done = false; var script = document.createElement('script'); script.async = true; script.type = 'text/javascript'; script.src = 'https://app.purechat.com/VisitorWidget/WidgetScript'; document.getElementsByTagName('HEAD').item(0).appendChild(script); script.onreadystatechange = script.onload = function (e) { if (!done && (!this.readyState || this.readyState == 'loaded' || this.readyState == 'complete')) { var w = new PCWidget({c: 'fc7505e2-28b2-48ba-a8d7-f91d55221d55', f: true }); done = true; } }; })();</script> <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-BLYKBV68KG"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-BLYKBV68KG');
+</script>
+
+  </body>
+</html>
