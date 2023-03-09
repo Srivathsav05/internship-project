@@ -6,7 +6,7 @@
 }
 body {
   font-family: "Roboto", sans-serif;
-/*   background-image: url("https://www.shutterstock.com/image-vector/wrapped-bitcoin-wbtc-crypto-currency-260nw-2205328249.jpg"); */
+  background-image: linear-gradient(to right, #e599f7 , #b197fc);
   background-repeat: no-repeat; 
   background-attachment: fixed;
   background-size: 100% 100%;
