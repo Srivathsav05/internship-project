@@ -56,9 +56,9 @@ const fetchPrice = async (ctype) => {
               <td>Change(24hrs)</td>
               <td style="color:${col};">${change}</td>
             </tr>
-             <tr>
-               <td>Last Update</td>
-               <td>${time}</td>
+//              <tr>
+//                <td>Last Update</td>
+//                <td>${time}</td>
              </tr>`;
 
   upd = setTimeout(() => fetchPrice(ctype), 10000);
