@@ -21,9 +21,10 @@ h3 {
 
 h1 {
   letter-spacing: 10px;
-  color: #201d1c;
+  color: #5c7cfa;
   width: 500px;
-  border: 15px solid rgb(35, 41, 43);
+  border: 15px solid #adb5bd;
+  border-radius: 25px;
   padding: 0 0 10px;
   margin: 20px;
 }
