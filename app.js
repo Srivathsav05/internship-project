@@ -1,3 +1,20 @@
+function getCurrentDateTime() {
+  const date = new Date();
+  const year = date.getFullYear();
+  const month = String(date.getMonth() + 1).padStart(2, '0'); // Adding 1 to month because it's zero-based.
+  const day = String(date.getDate()).padStart(2, '0');
+  const hours = String(date.getHours()).padStart(2, '0');
+  const minutes = String(date.getMinutes()).padStart(2, '0');
+  const seconds = String(date.getSeconds()).padStart(2, '0');
+
+  // Format the date and time as YYYY-MM-DD HH:MM:SS
+  const formattedDateTime = `${year}-${month}-${day} ${hours}:${minutes}:${seconds}`;
+
+  return formattedDateTime;
+}
+
+
+
 const form = document.querySelector("#SearchForm");
 const res = document.querySelector("#abc");
 const xyz = document.querySelector("#list");
@@ -19,13 +36,14 @@ form.addEventListener("submit", (ev) => {
 const fetchPrice = async (ctype) => {
   const r = await axios.get(`https://api.coinstats.app/public/v1/coins/${ctype}?currency:INR`);
 
-  // console.log(r);
+  console.log(r);
   const base = r.data.coin.name;
   const target = 'INR';
   const price = r.data.coin.price;
   const volume = r.data.coin.volume;
   const change = r.data.coin.priceChange1d;
-  const time = timeConverter(r.data.timestamp);
+  // const time = timeConverter(r.data.coin.timestamp);
+  const time= getCurrentDateTime();
 
   var col = "green";
   if (change < 0) {
